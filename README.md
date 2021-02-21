@@ -1,4 +1,4 @@
-# Calculators
+# NextJS Showcases
 
 ## Projects
 - [SSG Internationalization Routing](https://github.com/emmanuelgautier/nextjs-showcase/tree/main/packages/ssg-i18n-routing)

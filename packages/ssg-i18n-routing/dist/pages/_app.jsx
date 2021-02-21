@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -65,18 +54,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var next_seo_1 = require("next-seo");
-var app_1 = __importDefault(require("next/app"));
 var React = __importStar(require("react"));
 var react_intl_1 = require("react-intl");
 var polyfills_1 = require("../polyfills");
 require("../styles/globals.css");
 function MyApp(_a) {
-    var Component = _a.Component, pageProps = _a.pageProps, locale = _a.locale, messages = _a.messages;
+    var Component = _a.Component, pageProps = _a.pageProps, _b = _a.locale, locale = _b === void 0 ? process.env.NEXT_LOCALE : _b, messages = _a.messages;
     return (<react_intl_1.IntlProvider locale={locale} defaultLocale="en" messages={messages}>
       <next_seo_1.DefaultSeo />
       <Component {...pageProps}/>
@@ -100,12 +85,13 @@ function getMessages(locales) {
     for (var i = 0; i < locales.length && !locale; i++) {
         locale = locales[i];
         switch (locale) {
+            case 'en':
+                langBundle = Promise.resolve().then(function () { return __importStar(require('../compiled-lang/en.json')); });
             case 'fr':
                 langBundle = Promise.resolve().then(function () { return __importStar(require('../compiled-lang/fr.json')); });
                 break;
             default:
                 break;
-            // Add more languages
         }
     }
     if (!langBundle) {
@@ -113,30 +99,23 @@ function getMessages(locales) {
     }
     return [locale, langBundle];
 }
-var getInitialProps = function (appContext) { return __awaiter(void 0, void 0, void 0, function () {
-    var req, requestedLocales, _a, supportedLocale, messagePromise, _b, messages, appProps;
-    var _c;
-    return __generator(this, function (_d) {
-        switch (_d.label) {
-            case 0:
-                req = appContext.ctx.req;
-                requestedLocales = ((_c = req) === null || _c === void 0 ? void 0 : _c.locale) ||
-                    (typeof navigator !== 'undefined' && navigator.languages) ||
-                    // IE11
-                    (typeof navigator !== 'undefined' && navigator.userLanguage) ||
-                    (typeof window !== 'undefined' && window.LOCALE) ||
-                    'en';
-                _a = getMessages(requestedLocales), supportedLocale = _a[0], messagePromise = _a[1];
-                return [4 /*yield*/, Promise.all([
-                        polyfills_1.polyfill(supportedLocale),
-                        messagePromise,
-                        app_1.default.getInitialProps(appContext),
-                    ])];
-            case 1:
-                _b = _d.sent(), messages = _b[1], appProps = _b[2];
-                return [2 /*return*/, __assign(__assign({}, appProps), { locale: supportedLocale, messages: messages.default })];
-        }
+MyApp.getStaticProps = function (_a) {
+    var nextLocale = _a.locale, localeParam = _a.params.locale;
+    return __awaiter(void 0, void 0, void 0, function () {
+        var _b, locale, messagePromise, _c, messages;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    _b = getMessages(localeParam || nextLocale || process.env.NEXT_LOCALE), locale = _b[0], messagePromise = _b[1];
+                    return [4 /*yield*/, Promise.all([polyfills_1.polyfill(locale), messagePromise])];
+                case 1:
+                    _c = _d.sent(), messages = _c[1];
+                    return [2 /*return*/, {
+                            locale: locale,
+                            messages: messages.default,
+                        }];
+            }
+        });
     });
-}); };
-MyApp.getInitialProps = getInitialProps;
+};
 exports.default = MyApp;

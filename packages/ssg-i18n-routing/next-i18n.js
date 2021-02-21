@@ -4,12 +4,12 @@ module.exports = {
 
   domains: [
     {
-      domain: 'next-showcase-ssg-fr.vercel.com',
+      domain: 'next-showcase-ssg-fr.vercel.app',
       defaultLocale: 'fr',
     },
 
     {
-      domain: 'next-showcase-ssg-en.vercel.com',
+      domain: 'next-showcase-ssg-en.vercel.app',
       defaultLocale: 'en',
     },
   ],

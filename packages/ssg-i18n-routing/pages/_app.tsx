@@ -7,7 +7,7 @@ import { polyfill } from '../polyfills'
 
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps, locale, messages }) {
+function MyApp({ Component, pageProps, locale = process.env.NEXT_LOCALE, messages }) {
   return (
     <IntlProvider locale={locale} defaultLocale="en" messages={messages}>
       <DefaultSeo />
@@ -33,12 +33,13 @@ function getMessages(locales: string | string[] = ['en']) {
   for (let i = 0; i < locales.length && !locale; i++) {
     locale = locales[i]
     switch (locale) {
+      case 'en':
+        langBundle = import('../compiled-lang/en.json')
       case 'fr':
         langBundle = import('../compiled-lang/fr.json')
         break
       default:
         break
-      // Add more languages
     }
   }
   if (!langBundle) {
@@ -48,18 +49,8 @@ function getMessages(locales: string | string[] = ['en']) {
 }
 
 const getInitialProps: typeof App.getInitialProps = async appContext => {
-  const {
-    ctx: { req },
-  } = appContext
-  const requestedLocales: string | string[] =
-    (req as any)?.locale ||
-    (typeof navigator !== 'undefined' && navigator.languages) ||
-    // IE11
-    (typeof navigator !== 'undefined' && (navigator as any).userLanguage) ||
-    (typeof window !== 'undefined' && (window as any).LOCALE) ||
-    'en'
-
-  const [supportedLocale, messagePromise] = getMessages(requestedLocales)
+  const locale = appContext.router.locale || process.env.NEXT_LOCALE
+  const [supportedLocale, messagePromise] = getMessages(locale)
 
   const [, messages, appProps] = await Promise.all([
     polyfill(supportedLocale),

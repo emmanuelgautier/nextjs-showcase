@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           <a
-            href="https://nextjs.org/docs"
+            href={process.env.NEXT_LOCALE === 'en' ? 'https://www.emmanuelgautier.com/blog/nextjs-ssg-i18n-routing/' : 'https://www.emmanuelgautier.fr/blog/nextjs-ssg-i18n-routing/'}
             className="p-6 mx-2 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">

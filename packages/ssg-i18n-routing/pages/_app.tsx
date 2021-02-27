@@ -35,6 +35,7 @@ function getMessages(locales: string | string[] = ['en']) {
     switch (locale) {
       case 'en':
         langBundle = import('../compiled-lang/en.json')
+        break
       case 'fr':
         langBundle = import('../compiled-lang/fr.json')
         break

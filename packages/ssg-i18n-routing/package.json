@@ -25,7 +25,7 @@
     "postcss": "8.2.6",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-intl": "5.12.3",
+    "react-intl": "5.13.1",
     "tailwindcss": "2.0.3"
   },
   "license": "MIT",

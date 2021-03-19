@@ -21,7 +21,7 @@
     "babel-plugin-react-intl": "8.2.25",
     "glob": "7.1.6",
     "next": "latest",
-    "next-seo": "4.20.0",
+    "next-seo": "4.22.0",
     "postcss": "8.2.6",
     "react": "16.14.0",
     "react-dom": "16.14.0",

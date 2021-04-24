@@ -38,7 +38,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://nextjs.org/docs"
+            href="https://github.com/emmanuelgautier/nextjs-showcase/tree/main/packages/ssg-i18n-routing"
             className="p-6 mx-2 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">

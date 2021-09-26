@@ -26,7 +26,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-intl": "5.20.11",
-    "tailwindcss": "2.2.15"
+    "tailwindcss": "2.2.16"
   },
   "license": "MIT",
   "devDependencies": {

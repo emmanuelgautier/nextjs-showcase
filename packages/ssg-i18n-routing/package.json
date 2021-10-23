@@ -12,7 +12,7 @@
   "dependencies": {
     "@formatjs/cli": "2.15.0",
     "@formatjs/intl-datetimeformat": "2.8.4",
-    "@formatjs/intl-getcanonicallocales": "1.7.3",
+    "@formatjs/intl-getcanonicallocales": "1.8.0",
     "@formatjs/intl-numberformat": "5.7.6",
     "@formatjs/intl-pluralrules": "3.5.6",
     "@formatjs/intl-relativetimeformat": "7.3.6",
@@ -22,10 +22,10 @@
     "glob": "7.2.0",
     "next": "latest",
     "next-seo": "4.28.1",
-    "postcss": "8.3.9",
+    "postcss": "8.3.11",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-intl": "5.20.12",
+    "react-intl": "5.21.0",
     "tailwindcss": "2.2.17"
   },
   "license": "MIT",

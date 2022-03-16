@@ -283,10 +283,10 @@
     "@formatjs/intl-localematcher" "0.2.24"
     "tslib" "^2.1.0"
 
-"@formatjs/intl-getcanonicallocales@1.9.0":
-  "integrity" "sha512-5f/5oX0lYw4SOPT6KEOJn/TFKY2GRemrxNuvi/+xdyb3kQhsQlUU0vbcSJhnP+sBcrZFOfoL7OVRkw/vFl9KOA=="
-  "resolved" "https://registry.npmjs.org/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.9.0.tgz"
-  "version" "1.9.0"
+"@formatjs/intl-getcanonicallocales@1.9.1":
+  "integrity" "sha512-cqxVpDzfBYJRA/8bBPvlxHRlLE0ngi0eP8Evek7YXcC3AvKHJoeaZZeFYOvWxOKIOZVdWH87Btvc5h0TvDTofA=="
+  "resolved" "https://registry.npmjs.org/@formatjs/intl-getcanonicallocales/-/intl-getcanonicallocales-1.9.1.tgz"
+  "version" "1.9.1"
   dependencies:
     "tslib" "^2.1.0"
 
@@ -333,10 +333,10 @@
     "@formatjs/intl-localematcher" "0.2.24"
     "tslib" "^2.1.0"
 
-"@formatjs/intl@2.0.0":
-  "integrity" "sha512-EVVIhDeFVBxy7ej3IZFM/PNknM5QkGPUjMbl9PZvoB5q1/zmPQzTcDSqYxCEK+XfkrfT6XB1gHvfum+O8ASI1Q=="
-  "resolved" "https://registry.npmjs.org/@formatjs/intl/-/intl-2.0.0.tgz"
-  "version" "2.0.0"
+"@formatjs/intl@2.1.0":
+  "integrity" "sha512-1iGGqKcCym+ZH+cktHa6YILVGn8Sve+yuYK7hJpN21JiPKCPJuFJViKFY6rDM5jnj5LDCeH8N5YbhQjccDVOVA=="
+  "resolved" "https://registry.npmjs.org/@formatjs/intl/-/intl-2.1.0.tgz"
+  "version" "2.1.0"
   dependencies:
     "@formatjs/ecma402-abstract" "1.11.3"
     "@formatjs/fast-memoize" "1.2.1"
@@ -514,12 +514,7 @@
   "resolved" "https://registry.npmjs.org/@types/json-stable-stringify/-/json-stable-stringify-1.0.32.tgz"
   "version" "1.0.32"
 
-"@types/node@*", "@types/node@14 || 16 || 17":
-  "integrity" "sha512-DBZCJbhII3r90XbQxI8Y9IjjiiOGlZ0Hr32omXIZvwwZ7p4DMMXGrKXVyPfuoBOri9XNtL0UK69jYIBIsRX3QQ=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.21.tgz"
-  "version" "17.0.21"
-
-"@types/node@14":
+"@types/node@*", "@types/node@14", "@types/node@14 || 16 || 17":
   "integrity" "sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-14.14.31.tgz"
   "version" "14.14.31"
@@ -775,14 +770,14 @@
   "resolved" "https://registry.npmjs.org/ast-types/-/ast-types-0.13.2.tgz"
   "version" "0.13.2"
 
-"autoprefixer@^10.0.2", "autoprefixer@10.4.2":
-  "integrity" "sha512-9fOPpHKuDW1w/0EKfRmVnxTDt8166MAnLI3mgZ1JCnhNtYWxcJ6Ud5CO/AVOZi/AvFa8DY9RTy3h3+tFBlrrdQ=="
-  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.2.tgz"
-  "version" "10.4.2"
+"autoprefixer@^10.0.2", "autoprefixer@10.4.4":
+  "integrity" "sha512-Tm8JxsB286VweiZ5F0anmbyGiNI3v3wGv3mz9W+cxEDYB/6jbnj6GM9H9mK3wIL8ftgl+C07Lcwb8PG5PCCPzA=="
+  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.4.tgz"
+  "version" "10.4.4"
   dependencies:
-    "browserslist" "^4.19.1"
-    "caniuse-lite" "^1.0.30001297"
-    "fraction.js" "^4.1.2"
+    "browserslist" "^4.20.2"
+    "caniuse-lite" "^1.0.30001317"
+    "fraction.js" "^4.2.0"
     "normalize-range" "^0.1.2"
     "picocolors" "^1.0.0"
     "postcss-value-parser" "^4.2.0"
@@ -937,13 +932,13 @@
   dependencies:
     "pako" "~1.0.5"
 
-"browserslist@^4.19.1":
-  "integrity" "sha512-XK3X4xtKJ+Txj8G5c30B4gsm71s69lqXlkYui4s6EkKxuv49qjYlY6oVd+IFJ73d4YymtM3+djvvt/R/iJwwDg=="
-  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.19.3.tgz"
-  "version" "4.19.3"
+"browserslist@^4.20.2":
+  "integrity" "sha512-CQOBCqp/9pDvDbx3xfMi+86pr4KXIf2FDkTTdeuYw8OxS9t898LA1Khq57gtufFILXpfgsSx5woNgsBgvGjpsA=="
+  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.20.2.tgz"
+  "version" "4.20.2"
   dependencies:
-    "caniuse-lite" "^1.0.30001312"
-    "electron-to-chromium" "^1.4.71"
+    "caniuse-lite" "^1.0.30001317"
+    "electron-to-chromium" "^1.4.84"
     "escalade" "^3.1.1"
     "node-releases" "^2.0.2"
     "picocolors" "^1.0.0"
@@ -1001,10 +996,10 @@
   "resolved" "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz"
   "version" "2.0.1"
 
-"caniuse-lite@^1.0.30001173", "caniuse-lite@^1.0.30001179", "caniuse-lite@^1.0.30001297", "caniuse-lite@^1.0.30001312":
-  "integrity" "sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ=="
-  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz"
-  "version" "1.0.30001312"
+"caniuse-lite@^1.0.30001173", "caniuse-lite@^1.0.30001179", "caniuse-lite@^1.0.30001317":
+  "integrity" "sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001317.tgz"
+  "version" "1.0.30001317"
 
 "chalk@^2.0.0":
   "integrity" "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
@@ -1398,10 +1393,10 @@
   "resolved" "https://registry.npmjs.org/domain-browser/-/domain-browser-1.2.0.tgz"
   "version" "1.2.0"
 
-"electron-to-chromium@^1.3.634", "electron-to-chromium@^1.4.71":
-  "integrity" "sha512-RlCffXkE/LliqfA5m29+dVDPB2r72y2D2egMMfIy3Le8ODrxjuZNVo4NIC2yPL01N4xb4nZQLwzi6Z5tGIGLnA=="
-  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.73.tgz"
-  "version" "1.4.73"
+"electron-to-chromium@^1.3.634", "electron-to-chromium@^1.4.84":
+  "integrity" "sha512-K9AsQ41WS2bjZUFpRWfvaS4RjEcRCamEkBJN1Z1TQILBfP1H8QnJ9ti0wiLiMv0sRjX3EHKzgs9jDnmGFx2jXg=="
+  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.85.tgz"
+  "version" "1.4.85"
 
 "elliptic@^6.5.3":
   "integrity" "sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ=="
@@ -1530,10 +1525,10 @@
     "locate-path" "^5.0.0"
     "path-exists" "^4.0.0"
 
-"fraction.js@^4.1.2":
-  "integrity" "sha512-pUHWWt6vHzZZiQJcM6S/0PXfS+g6FM4BF5rj9wZyreivhQPdsh5PpE25VtSNxq80wHS5RfY51Ii+8Z0Zl/pmzg=="
-  "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.1.3.tgz"
-  "version" "4.1.3"
+"fraction.js@^4.2.0":
+  "integrity" "sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA=="
+  "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
+  "version" "4.2.0"
 
 "fs-constants@^1.0.0":
   "integrity" "sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow=="
@@ -2424,10 +2419,10 @@
     "source-map" "^0.6.1"
     "supports-color" "^6.1.0"
 
-"postcss@^8.1.0", "postcss@^8.1.10", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.6", "postcss@8.4.8":
-  "integrity" "sha512-2tXEqGxrjvAO6U+CJzDL2Fk2kPHTv1jQsYkSoMeOis2SsYaXRO2COxTdQp99cYvif9JTXaAk9lYGc3VhJt7JPQ=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.8.tgz"
-  "version" "8.4.8"
+"postcss@^8.1.0", "postcss@^8.1.10", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.6", "postcss@8.4.12":
+  "integrity" "sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.12.tgz"
+  "version" "8.4.12"
   dependencies:
     "nanoid" "^3.3.1"
     "picocolors" "^1.0.0"
@@ -2464,10 +2459,10 @@
     "tunnel-agent" "^0.6.0"
     "which-pm-runs" "^1.0.0"
 
-"prettier@2.5.1":
-  "integrity" "sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg=="
-  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
-  "version" "2.5.1"
+"prettier@2.6.0":
+  "integrity" "sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.6.0.tgz"
+  "version" "2.6.0"
 
 "process-nextick-args@~2.0.0":
   "integrity" "sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag=="
@@ -2592,14 +2587,14 @@
     "object-assign" "^4.1.1"
     "scheduler" "^0.20.2"
 
-"react-intl@5.24.6":
-  "integrity" "sha512-6gUhQwNAeAoRpN6F3N+bR66aot/mI6yduRwQS5ajfmXHX/YFvOfINkgMFTTrcbf3+qjBhACNU3ek4wFt6cn2ww=="
-  "resolved" "https://registry.npmjs.org/react-intl/-/react-intl-5.24.6.tgz"
-  "version" "5.24.6"
+"react-intl@5.24.7":
+  "integrity" "sha512-URPLwISsEmnzft33honGEb87LcK0QtwkZXCNsXcDYTnrYC8ZyeJRTcPYvuXC3mrN6+DxnW52RfHC416zNxfyIg=="
+  "resolved" "https://registry.npmjs.org/react-intl/-/react-intl-5.24.7.tgz"
+  "version" "5.24.7"
   dependencies:
     "@formatjs/ecma402-abstract" "1.11.3"
     "@formatjs/icu-messageformat-parser" "2.0.18"
-    "@formatjs/intl" "2.0.0"
+    "@formatjs/intl" "2.1.0"
     "@formatjs/intl-displaynames" "5.4.2"
     "@formatjs/intl-listformat" "6.5.2"
     "@types/hoist-non-react-statics" "^3.3.1"

@@ -2082,10 +2082,10 @@
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   "version" "0.6.3"
 
-"next-seo@4.29.0":
-  "integrity" "sha512-xmwzcz4uHaYJ8glbuhs6FSBQ7z3irmdPYdJJ5saWm72Uy3o+mPKGaPCXQetTCE6/xxVnpoDV4yFtFlEjUcljSg=="
-  "resolved" "https://registry.npmjs.org/next-seo/-/next-seo-4.29.0.tgz"
-  "version" "4.29.0"
+"next-seo@5.2.0":
+  "integrity" "sha512-IJNKzYH4ARKHxN6YTN7AYj3CEpZLpL/o6FlDZqWJ/HaOnpjpvLHpQlI57be/N92iafmYwYE+jOU0SQ6T9DIo/Q=="
+  "resolved" "https://registry.npmjs.org/next-seo/-/next-seo-5.2.0.tgz"
+  "version" "5.2.0"
 
 "next@^8.1.1-canary.54 || >=9.0.0", "next@latest":
   "integrity" "sha512-We0utmwwfkvO12eLyUZd3tX9VLDE3FPpOaHpH3kqKdUTxJzUKt8FLBXCTm0mwsTKW5XColWG8mJvz2OLu3+3QA=="

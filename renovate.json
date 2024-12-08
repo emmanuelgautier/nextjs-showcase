@@ -1,5 +1,5 @@
 {
   "extends": [
-    "@emmanuelgautier"
+    "github>emmanuelgautier/renovate-config"
   ]
 }
